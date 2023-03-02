@@ -14,8 +14,8 @@ def toot(name):
 
 if __name__ == '__main__':
 
-    image_path = "../assets/vancouver_base_map.png"
-    output_path = "../outputs/vancouver_earthquake_map.png"
+    image_path = "./assets/vancouver_base_map.png"
+    output_path = "./outputs/vancouver_earthquake_map.png"
 
     earthquake_data = read_json_output()
     draw_earthquake_points(image_path, output_path, earthquake_data)
