@@ -11,3 +11,11 @@ def convert_lon_to_x_pixel(image_width: float, longitude: float):
     xp = pct_of_x * image_width
     return xp
 
+
+def convert_lat_to_y_pixel(image_height: float, latitude: float):
+    range_of_y = TOP - BOTTOM
+    norm_value = latitude - BOTTOM
+    pct_of_y = norm_value / range_of_y
+    yp = image_height - (pct_of_y * image_height)
+    return yp
+
