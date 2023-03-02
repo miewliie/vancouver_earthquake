@@ -19,3 +19,6 @@ def convert_lat_to_y_pixel(image_height: float, latitude: float):
     yp = image_height - (pct_of_y * image_height)
     return yp
 
+
+def draw_earthquake_points(image_path, output_path, earthquake_data):
+    pass
