@@ -17,6 +17,24 @@
       "geometry": {
         "coordinates": [-123.1207, 49.2827, 10]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 5.0
+      },
+      "geometry": {
+        "coordinates": [-129.6706, 50.4404, 10]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3.0
+      },
+      "geometry": {
+        "coordinates": [-116.3947, 49.9282, 10]
+      }
     }
   ]
 }
