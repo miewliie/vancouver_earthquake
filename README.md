@@ -5,9 +5,9 @@
 - Toot account: https://mastodon.world/@vancouver_earthquake
 - Tweet account: https://twitter.com/bc_earthquake
 
-Example:
+**Example:**
 
-![example_map](https://user-images.githubusercontent.com/20311850/222644497-329c4458-c149-42a3-89ff-7a2e14f90779.png)
+<img width="557" alt="example_map" src="https://user-images.githubusercontent.com/20311850/222842352-8f2b019a-5b65-41d9-b252-cf0a7b105620.png">
 
 
 ### Prerequisites 
