@@ -44,6 +44,6 @@ if __name__ == '__main__':
     earthquake_data = get_earthquake_info()
     earthquake_info = get_earthquake_title()
 
-    if not len(earthquake_data) == 0 and not earthquake_info == 0:
+    if not len(earthquake_data) == 0 and not len(earthquake_info) == 0:
         draw_earthquake_points(image_path, output_path, earthquake_data)
         send_new_status_for(earthquake_info, output_path)
