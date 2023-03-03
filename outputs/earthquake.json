@@ -1,0 +1,581 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated": 1677805900000,
+    "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2023-02-02&endtime=2023-04-30&latitude=49.246292&longitude=-123.116226&maxradiuskm=1000&eventtype=earthquake&minmagnitude=3.0",
+    "title": "USGS Earthquakes",
+    "status": 200,
+    "api": "1.13.6",
+    "count": 14
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3,
+        "place": "26 km WSW of Leadore, Idaho",
+        "time": 1677497649214,
+        "updated": 1677532309762,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000jrx0",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000jrx0&format=geojson",
+        "felt": 2,
+        "cdi": 3.1,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 139,
+        "net": "us",
+        "code": "6000jrx0",
+        "ids": ",us6000jrx0,",
+        "sources": ",us,",
+        "types": ",dyfi,origin,phase-data,",
+        "nst": 29,
+        "dmin": 0.625,
+        "rms": 0.62,
+        "gap": 72,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 3.0 - 26 km WSW of Leadore, Idaho"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.6822,
+          44.6331,
+          13.303
+        ]
+      },
+      "id": "us6000jrx0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3,
+        "place": "210 km W of Langlois, Oregon",
+        "time": 1677334994106,
+        "updated": 1677351297493,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000jrk2",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000jrk2&format=geojson",
+        "felt": 1,
+        "cdi": 1,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 139,
+        "net": "us",
+        "code": "6000jrk2",
+        "ids": ",us6000jrk2,",
+        "sources": ",us,",
+        "types": ",dyfi,origin,phase-data,",
+        "nst": 26,
+        "dmin": 1.771,
+        "rms": 0.96,
+        "gap": 286,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 3.0 - 210 km W of Langlois, Oregon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -127.0118,
+          43.1729,
+          10
+        ]
+      },
+      "id": "us6000jrk2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3.07,
+        "place": "4km ESE of Ferndale, CA",
+        "time": 1677080901610,
+        "updated": 1677399817105,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc73850141",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc73850141&format=geojson",
+        "felt": 56,
+        "cdi": 3.1,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 162,
+        "net": "nc",
+        "code": "73850141",
+        "ids": ",nc73850141,",
+        "sources": ",nc,",
+        "types": ",dyfi,focal-mechanism,nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 34,
+        "dmin": 0.03697,
+        "rms": 0.11,
+        "gap": 70,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 3.1 - 4km ESE of Ferndale, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -124.2203333,
+          40.5595,
+          15.63
+        ]
+      },
+      "id": "nc73850141"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 4.1,
+        "place": "228 km WSW of Tofino, Canada",
+        "time": 1676884116029,
+        "updated": 1677053842332,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000jq9j",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000jq9j&format=geojson",
+        "felt": 2,
+        "cdi": 2.2,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 259,
+        "net": "us",
+        "code": "6000jq9j",
+        "ids": ",us6000jq9j,",
+        "sources": ",us,",
+        "types": ",dyfi,origin,phase-data,",
+        "nst": 66,
+        "dmin": 0.789,
+        "rms": 0.36,
+        "gap": 128,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 4.1 - 228 km WSW of Tofino, Canada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -128.9566,
+          48.74,
+          10
+        ]
+      },
+      "id": "us6000jq9j"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3.2,
+        "place": "236 km W of Bandon, Oregon",
+        "time": 1676833861687,
+        "updated": 1677522602040,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000jq5f",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000jq5f&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 158,
+        "net": "us",
+        "code": "6000jq5f",
+        "ids": ",us6000jq5f,",
+        "sources": ",us,",
+        "types": ",origin,phase-data,",
+        "nst": 15,
+        "dmin": 1.8,
+        "rms": 0.89,
+        "gap": 296,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 3.2 - 236 km W of Bandon, Oregon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -127.3072,
+          43.3472,
+          10
+        ]
+      },
+      "id": "us6000jq5f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3.2,
+        "place": "off the coast of Oregon",
+        "time": 1676784274922,
+        "updated": 1676840691339,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000jq1r",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000jq1r&format=geojson",
+        "felt": 1,
+        "cdi": 1,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 158,
+        "net": "us",
+        "code": "6000jq1r",
+        "ids": ",us6000jq1r,",
+        "sources": ",us,",
+        "types": ",dyfi,origin,phase-data,",
+        "nst": 20,
+        "dmin": 1.765,
+        "rms": 0.71,
+        "gap": 292,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 3.2 - off the coast of Oregon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -127.3272,
+          43.4184,
+          10
+        ]
+      },
+      "id": "us6000jq1r"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 4.6,
+        "place": "184 km W of Port McNeill, Canada",
+        "time": 1676616948695,
+        "updated": 1677649562051,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000jpja",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000jpja&format=geojson",
+        "felt": 3,
+        "cdi": 3.1,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 1,
+        "sig": 326,
+        "net": "us",
+        "code": "6000jpja",
+        "ids": ",at00rq7px4,us6000jpja,",
+        "sources": ",at,us,",
+        "types": ",dyfi,impact-link,origin,phase-data,",
+        "nst": 87,
+        "dmin": 2.002,
+        "rms": 0.6,
+        "gap": 159,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 4.6 - 184 km W of Port McNeill, Canada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -129.6706,
+          50.4404,
+          10
+        ]
+      },
+      "id": "us6000jpja"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3.9,
+        "place": "off the coast of Oregon",
+        "time": 1676578921561,
+        "updated": 1677508263040,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000jr94",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000jr94&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 234,
+        "net": "us",
+        "code": "6000jr94",
+        "ids": ",us6000jr94,",
+        "sources": ",us,",
+        "types": ",origin,phase-data,",
+        "nst": 37,
+        "dmin": 3.78,
+        "rms": 0.73,
+        "gap": 199,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 3.9 - off the coast of Oregon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -129.0178,
+          43.9495,
+          10
+        ]
+      },
+      "id": "us6000jr94"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3.58,
+        "place": "81km W of Petrolia, CA",
+        "time": 1676472641270,
+        "updated": 1677059945040,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc73846771",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=nc73846771&format=geojson",
+        "felt": 6,
+        "cdi": 2,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 198,
+        "net": "nc",
+        "code": "73846771",
+        "ids": ",nc73846771,us6000jp5w,",
+        "sources": ",nc,us,",
+        "types": ",dyfi,nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 69,
+        "dmin": 0.6908,
+        "rms": 0.29,
+        "gap": 260,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 3.6 - 81km W of Petrolia, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -125.2376667,
+          40.384,
+          10
+        ]
+      },
+      "id": "nc73846771"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3.6,
+        "place": "170 km W of Crescent City, California",
+        "time": 1676396447249,
+        "updated": 1676420712936,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000jny2",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000jny2&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 199,
+        "net": "us",
+        "code": "6000jny2",
+        "ids": ",nc73846351,us6000jny2,",
+        "sources": ",nc,us,",
+        "types": ",nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 27,
+        "dmin": 1.787,
+        "rms": 0.45,
+        "gap": 238,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 3.6 - 170 km W of Crescent City, California"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -126.22,
+          41.4983,
+          16.392
+        ]
+      },
+      "id": "us6000jny2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3.4,
+        "place": "off the coast of Oregon",
+        "time": 1675938599715,
+        "updated": 1675981333546,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000jmpr",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000jmpr&format=geojson",
+        "felt": 2,
+        "cdi": 2,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 178,
+        "net": "us",
+        "code": "6000jmpr",
+        "ids": ",us6000jmpr,",
+        "sources": ",us,",
+        "types": ",dyfi,origin,phase-data,",
+        "nst": 39,
+        "dmin": 2.164,
+        "rms": 0.78,
+        "gap": 201,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 3.4 - off the coast of Oregon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -128.4042,
+          43.8746,
+          10
+        ]
+      },
+      "id": "us6000jmpr"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3.9,
+        "place": "41 km NW of Kimberley, Canada",
+        "time": 1675571950395,
+        "updated": 1675998555104,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000jli2",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000jli2&format=geojson",
+        "felt": 90,
+        "cdi": 3.8,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 268,
+        "net": "us",
+        "code": "6000jli2",
+        "ids": ",us6000jli2,",
+        "sources": ",us,",
+        "types": ",dyfi,origin,phase-data,",
+        "nst": 17,
+        "dmin": 1.546,
+        "rms": 0.57,
+        "gap": 105,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 3.9 - 41 km NW of Kimberley, Canada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.3947,
+          49.9282,
+          10
+        ]
+      },
+      "id": "us6000jli2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 4.3,
+        "place": "off the coast of Oregon",
+        "time": 1675365564748,
+        "updated": 1677618548040,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000jmsd",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000jmsd&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 284,
+        "net": "us",
+        "code": "6000jmsd",
+        "ids": ",us6000jmsd,",
+        "sources": ",us,",
+        "types": ",origin,phase-data,",
+        "nst": 24,
+        "dmin": 2.802,
+        "rms": 1.05,
+        "gap": 208,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 4.3 - off the coast of Oregon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -129.1367,
+          43.7159,
+          10
+        ]
+      },
+      "id": "us6000jmsd"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3,
+        "place": "9 km NE of Stanley, Idaho",
+        "time": 1675363451951,
+        "updated": 1677618098040,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000jl11",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000jl11&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 138,
+        "net": "us",
+        "code": "6000jl11",
+        "ids": ",us6000jl11,",
+        "sources": ",us,",
+        "types": ",origin,phase-data,",
+        "nst": 44,
+        "dmin": 0.789,
+        "rms": 0.77,
+        "gap": 34,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 3.0 - 9 km NE of Stanley, Idaho"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.8652,
+          44.2812,
+          14.168
+        ]
+      },
+      "id": "us6000jl11"
+    }
+  ],
+  "bbox": [
+    -129.6706,
+    40.384,
+    10,
+    -113.6822,
+    50.4404,
+    16.392
+  ]
+}
