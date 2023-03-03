@@ -4,7 +4,7 @@ from datetime import date, timedelta
 
 
 START_DATE = date.today().isoformat()
-END_DATE = (date.today()+timedelta(days=30)).isoformat()
+END_DATE = (date.today()+timedelta(days=1)).isoformat()
 # vancouver lat & long
 LATITUDE = '49.246292'
 LONGITUDE = '-123.116226'
