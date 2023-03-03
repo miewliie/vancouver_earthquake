@@ -7,7 +7,7 @@
 
 Example:
 
-![vancouver_earthquake_map](https://user-images.githubusercontent.com/20311850/222644497-329c4458-c149-42a3-89ff-7a2e14f90779.png)
+![example_map](https://user-images.githubusercontent.com/20311850/222644497-329c4458-c149-42a3-89ff-7a2e14f90779.png)
 
 
 ### Prerequisites 
