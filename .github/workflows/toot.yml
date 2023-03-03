@@ -2,6 +2,8 @@ name: Earthquake Toot workflow
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "1 */5 * * *"
 
 jobs:
   toot:
