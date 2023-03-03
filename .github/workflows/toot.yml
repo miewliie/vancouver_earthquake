@@ -31,3 +31,13 @@ jobs:
           ACCOUNT_EMAIL: ${{ secrets.ACCOUNT_EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
           MASTODON_SERVER: ${{ secrets.MASTODON_SERVER }}
+
+      - name: Commit and push if api changed
+        run: |-
+          cd /home/runner/work/vancouver_earthquake/vancouver_earthquake/
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+          git add outputs/earthquake.json
+          timestamp=$(date -u)
+          git commit -m "Latest response from earthquake.usgs.gov: ${timestamp}" || exit 0
+          git push
