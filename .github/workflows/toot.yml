@@ -14,12 +14,16 @@ jobs:
         run: |-
           cd /home/runner/work/vancouver_earthquake/vancouver_earthquake/api 
           python3 earthquake_api.py
-
-      - name: Post earthquake and map into Mastodon
+          
+      - name: Install dependencies 
         run: |-
           cd /home/runner/work/vancouver_earthquake/vancouver_earthquake
           pip3 install Mastodon.py
           python3 -m pip install --upgrade Pillow
+
+      - name: Post earthquake and map into Mastodon
+        run: |-
+          cd /home/runner/work/vancouver_earthquake/vancouver_earthquake
           python3 toot.py
         env:
           ACCOUNT_EMAIL: ${{ secrets.ACCOUNT_EMAIL }}
