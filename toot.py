@@ -1,6 +1,6 @@
 import os
 from mastodon import Mastodon
-from earthquake.earthquake import get_earthquake_title, read_json_output
+from earthquake.earthquake import get_earthquake_title, get_earthquake_info
 from draw.draw_earthquake import draw_earthquake_points
 
 
@@ -38,12 +38,12 @@ def send_new_status_for(earthquake_title: str, earthquake_map_path: str):
 
 if __name__ == '__main__':
 
-    image_path = "../assets/vancouver_base_map.png"
-    output_path = "../outputs/vancouver_earthquake_map.png"
+    image_path = "./assets/vancouver_base_map.png"
+    output_path = "./outputs/vancouver_earthquake_map.png"
 
-    earthquake_data = read_json_output()
+    earthquake_data = get_earthquake_info()
     earthquake_info = get_earthquake_title()
 
-    if not (earthquake_data["metadata"]["count"]) == 0:
+    if not len(earthquake_data) == 0 and not earthquake_info == 0:
         draw_earthquake_points(image_path, output_path, earthquake_data)
         send_new_status_for(earthquake_info, output_path)
