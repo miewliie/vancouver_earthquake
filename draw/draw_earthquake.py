@@ -28,12 +28,10 @@ def draw_earthquake_points(image_path, output_path, earthquake_data):
     im_height = image.size[1]
     draw = ImageDraw.Draw(image)
 
-    features_obj = earthquake_data["features"]
-    for obj in features_obj:
-        properties_obj = obj["properties"]
-        x_longitude = obj["geometry"]["coordinates"][0]
-        y_latitude = obj["geometry"]["coordinates"][1]
-        magnitude = properties_obj["mag"]
+    for obj in earthquake_data:
+        x_longitude = obj[0]
+        y_latitude = obj[1]
+        magnitude = obj[2]
 
         lon_x_pixel = convert_lon_to_x_pixel(im_width, x_longitude)
         lat_y_pixel = convert_lat_to_y_pixel(im_height, y_latitude)

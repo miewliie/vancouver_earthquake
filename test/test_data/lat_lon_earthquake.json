@@ -1,40 +1,5 @@
-{
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "mag": 4.1
-      },
-      "geometry": {
-        "coordinates": [-128.9566, 48.74, 10]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "mag": 6.0
-      },
-      "geometry": {
-        "coordinates": [-123.1207, 49.2827, 10]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "mag": 5.0
-      },
-      "geometry": {
-        "coordinates": [-129.6706, 50.4404, 10]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "mag": 3.0
-      },
-      "geometry": {
-        "coordinates": [-116.3947, 49.9282, 10]
-      }
-    }
-  ]
-}
+[[-128.9566, 48.74, 5.1],
+  [-123.1207, 49.2827, 6.1],
+  [-129.6706, 50.4404, 4.6],
+  [-116.3947, 49.9282, 3.9]
+]
