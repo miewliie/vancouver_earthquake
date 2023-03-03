@@ -18,6 +18,6 @@ if __name__ == '__main__':
     output_path = "./outputs/vancouver_earthquake_map.png"
 
     earthquake_data = read_json_output()
-    draw_earthquake_points(image_path, output_path, earthquake_data)
-
-    tweet('this method is for tweet earthquake')
+    if not (earthquake_data["metadata"]["count"]) == 0:
+        draw_earthquake_points(image_path, output_path, earthquake_data)
+        tweet('this method is for tweet earthquake')
