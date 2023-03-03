@@ -28,7 +28,6 @@ def get_earthquake_info():
             coordinates.append(y_latitude)
             coordinates.append(properties["mag"])
             earthquake_info.append(coordinates)
-    print(earthquake_info)
     return earthquake_info
 
 

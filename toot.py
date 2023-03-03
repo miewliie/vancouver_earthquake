@@ -47,3 +47,5 @@ if __name__ == '__main__':
     if not len(earthquake_data) == 0 and not len(earthquake_info) == 0:
         draw_earthquake_points(image_path, output_path, earthquake_data)
         send_new_status_for(earthquake_info, output_path)
+    else:
+        print("No earthquake")
