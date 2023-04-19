@@ -21,8 +21,6 @@ class TestDrawEarthquake(unittest.TestCase):
         self.assertEqual(640.0, y_pixel)
 
     def test_draw_earthquake_points(self):
-        # TODO: cleanup this test by verify the draw of xy coordinate on white canvas.
-        #  To not testing the lib! like this
         output_path = "./output_test/vancouver_earthquake_map.png"
         base_image_path = "../assets/vancouver_base_map.png"
 
