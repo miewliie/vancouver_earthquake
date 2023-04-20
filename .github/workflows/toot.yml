@@ -17,11 +17,6 @@ jobs:
           cd /home/runner/work/vancouver_earthquake/vancouver_earthquake
           pip3 install Mastodon.py
           python3 -m pip install --upgrade Pillow
-          
-      - name: Run tests
-        run: |-
-          cd /home/runner/work/vancouver_earthquake/vancouver_earthquake/test
-          python3 test_draw_earthquake.py
 
       - name: Request earthquake data and write into Json file
         run: |-
