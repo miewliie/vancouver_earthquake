@@ -1,9 +1,9 @@
-name: Earthquake Toot workflow
+name: Earthquake Toot & Tweet workflow
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "59 * * * *"
+    - cron: "0 * * * *"
 
 jobs:
   toot:
@@ -36,6 +36,17 @@ jobs:
           ACCOUNT_EMAIL: ${{ secrets.ACCOUNT_EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
           MASTODON_SERVER: ${{ secrets.MASTODON_SERVER }}
+
+      - name: Post earthquake into Twitter
+        run: |-
+          cd /home/runner/work/vancouver_earthquake/vancouver_earthquake
+          python3 tweet.py
+        env:
+          TW_BEARER_TOKEN: ${{ secrets.TW_BEARER_TOKEN }}
+          TW_API_KEY: ${{ secrets.TW_API_KEY }}
+          TW_API_KEY_SECRET: ${{ secrets.TW_API_KEY_SECRET }}
+          TW_USER_ACCESS_TOKEN: ${{ secrets.TW_USER_ACCESS_TOKEN }}
+          TW_USER_ACCESS_TOKEN_SECRET: ${{ secrets.TW_USER_ACCESS_TOKEN_SECRET }}
 
       - name: Commit and push if api changed
         run: |-
