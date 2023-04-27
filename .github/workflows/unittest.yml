@@ -1,0 +1,25 @@
+name: Unit Test workflow
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: |-
+          cd /home/runner/work/vancouver_earthquake/vancouver_earthquake
+          pip3 install Mastodon.py
+          python3 -m pip install --upgrade Pillow
+
+      - name: Run tests
+        run: |-
+          cd /home/runner/work/vancouver_earthquake/vancouver_earthquake/
+          python3 -m unittest test/test_draw_earthquake.py
