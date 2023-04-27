@@ -3,7 +3,7 @@ name: Earthquake Toot & Tweet workflow
 on:
   workflow_dispatch:
   schedule:
-    - cron: "59 * * * *"
+    - cron: "0 * * * *"
 
 jobs:
   toot:
