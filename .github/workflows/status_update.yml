@@ -29,6 +29,16 @@ jobs:
           cd /home/runner/work/vancouver_earthquake/vancouver_earthquake/api 
           python3 earthquake_api.py
 
+      - name: Commit and push if api changed
+        run: |-
+          cd /home/runner/work/vancouver_earthquake/vancouver_earthquake/
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+          git add outputs/earthquake.json
+          timestamp=$(date -u)
+          git commit -m "Latest response from earthquake.usgs.gov: ${timestamp}" || exit 0
+          git push
+
       - name: Post earthquake and map into Mastodon
         run: |-
           cd /home/runner/work/vancouver_earthquake/vancouver_earthquake
@@ -49,12 +59,3 @@ jobs:
           TW_USER_ACCESS_TOKEN: ${{ secrets.TW_USER_ACCESS_TOKEN }}
           TW_USER_ACCESS_TOKEN_SECRET: ${{ secrets.TW_USER_ACCESS_TOKEN_SECRET }}
 
-      - name: Commit and push if api changed
-        run: |-
-          cd /home/runner/work/vancouver_earthquake/vancouver_earthquake/
-          git config user.name "Automated"
-          git config user.email "actions@users.noreply.github.com"
-          git add outputs/earthquake.json
-          timestamp=$(date -u)
-          git commit -m "Latest response from earthquake.usgs.gov: ${timestamp}" || exit 0
-          git push
