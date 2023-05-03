@@ -25,8 +25,8 @@ class TestDrawEarthquake(unittest.TestCase):
         self.assertEqual(expected_result, y_pixel)
 
     def test_draw_earthquake_points(self):
-        output_path: str = "../output_test/vancouver_earthquake_map.png"
-        base_image_path: str = "../../assets/vancouver_base_map.png"
+        output_path: str = "output_test/vancouver_earthquake_map.png"
+        base_image_path: str = "assets/vancouver_base_map.png"
         earthquakes: list[Earthquake] = [Earthquake(title='M 3.4 - 37 km SW of Princeton, Canada',
                                                     magnitude=3.4, longitude=-120.8133,
                                                     latitude=49.1893, time=1682702356267,

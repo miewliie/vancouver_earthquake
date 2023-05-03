@@ -40,8 +40,8 @@ class TestSocialComposer(unittest.TestCase):
                                                     latitude=49.1893, time=1682702356267,
                                                     detail_url='https://earthquake.usgs.gov/earthquakes/eventpage'
                                                                '/us7000jwrg')] * 2
-        base_image_path = '../assets/vancouver_base_map.png'
-        expected_image_path = '../outputs/vancouver_earthquake_map.png'
+        base_image_path = 'assets/vancouver_base_map.png'
+        expected_image_path = 'outputs/vancouver_earthquake_map.png'
 
         with mock.patch('vancouver_earthquake.social.social_composer.create_map',
                         return_value=expected_image_path), \
