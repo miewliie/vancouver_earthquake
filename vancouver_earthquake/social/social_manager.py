@@ -8,12 +8,15 @@ from vancouver_earthquake.social.tweet import send_new_tweet
 
 def social_manager(earthquakes: list[Earthquake]):
     """ This function will manage the social media. """
-    image_path: str = create_map(earthquake=earthquakes)
+    image_path: str = create_map(earthquakes=earthquakes)
     message: str = compose_message(earthquakes=earthquakes)
 
+    print(image_path, ' ', message)
     try:
         send_new_toot(message=message, image_path=image_path)
     except MastodonError:
         pass
-
-    send_new_tweet(message=message, image_path=image_path)
+    try:
+        send_new_tweet(message=message, image_path=image_path)
+    except Exception:
+        pass
