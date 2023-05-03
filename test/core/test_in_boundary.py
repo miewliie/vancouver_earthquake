@@ -8,8 +8,8 @@ from vancouver_earthquake.storage.data_handler import read_json
 
 class TestInBoundary(unittest.TestCase):
 
-    def test_in_boundary(self):
-        earthquake_json = read_json('test_data/get_earthquake_data.json')
+    def test_filter_out_some_not_in_boundary(self):
+        earthquake_json = read_json('test/core/test_data/get_earthquake_data.json')
         expected_earthquakes = [Earthquake(title='M 3.4 - 37 km SW of Princeton, Canada', magnitude=3.4,
                                            longitude=-120.8133, latitude=49.1893, time=1682702356267,
                                            detail_url='https://earthquake.usgs.gov/earthquakes/eventpage/us7000jwrg'),
@@ -23,14 +23,14 @@ class TestInBoundary(unittest.TestCase):
         earthquakes: list[Earthquake] = in_boundary(earthquake_encoder(earthquake_json))
         self.assertEqual(earthquakes, expected_earthquakes)
 
-    def test_not_in_boundary(self):
-        earthquake_json = read_json('test_data/not_in_boundary_earthquakes.json')
+    def test_filter_out_all_not_in_boundary(self):
+        earthquake_json = read_json('test/core/test_data/not_in_boundary_earthquakes.json')
         expected_earthquakes = []
         earthquakes: list[Earthquake] = in_boundary(earthquake_encoder(earthquake_json))
         self.assertEqual(earthquakes, expected_earthquakes)
 
-    def test_in_boundary(self):
-        earthquake_json = read_json('test_data/empty_earthquake_data.json')
+    def test_no_filter_out_if_empty_earthquake(self):
+        earthquake_json = read_json('test/core/test_data/empty_earthquake_data.json')
         expected_earthquakes = []
         earthquakes: list[Earthquake] = in_boundary(earthquake_encoder(earthquake_json))
         self.assertEqual(earthquakes, expected_earthquakes)

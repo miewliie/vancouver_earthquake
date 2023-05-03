@@ -8,7 +8,7 @@ from vancouver_earthquake.storage.data_handler import read_json
 class TestEarthquakeProvider(unittest.TestCase):
 
     def test_get_earthquake_data(self):
-        earthquakes = read_json('test_data/get_earthquake_data.json')
+        earthquakes = read_json('test/core/test_data/get_earthquake_data.json')
         expected_earthquakes = [Earthquake(title='M 3.4 - 37 km SW of Princeton, Canada', magnitude=3.4,
                                            longitude=-120.8133, latitude=49.1893, time=1682702356267,
                                            detail_url='https://earthquake.usgs.gov/earthquakes/eventpage/us7000jwrg'),
@@ -22,15 +22,15 @@ class TestEarthquakeProvider(unittest.TestCase):
                                            longitude=-115.172833333333, latitude=44.3515, time=1681318288600,
                                            detail_url='https://earthquake.usgs.gov/earthquakes/eventpage/mb90010333')]
 
-        with mock.patch('vancouver_earthquake.core.earthquake_provider.fetch_earthquakes', return_value=earthquakes):
+        with mock.patch('vancouver_earthquake.core.network_manager.fetch_earthquakes', return_value=earthquakes):
             earthquake_data = get_earthquake_data()
             self.assertEqual(earthquake_data, expected_earthquakes)
 
     def test_empty_earthquake_data(self):
-        earthquakes = read_json('test_data/empty_earthquake_data.json')
+        earthquakes = read_json('test/core/test_data/empty_earthquake_data.json')
         expected_earthquakes = []
 
-        with mock.patch('vancouver_earthquake.core.earthquake_provider.fetch_earthquakes', return_value=earthquakes):
+        with mock.patch('vancouver_earthquake.core.network_manager.fetch_earthquakes', return_value=earthquakes):
             earthquake_data = get_earthquake_data()
             self.assertEqual(earthquake_data, expected_earthquakes)
 
