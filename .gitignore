@@ -2,3 +2,4 @@ venv/
 .idea
 test/output_test/
 *.pyc
+*__pycache__
