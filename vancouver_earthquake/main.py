@@ -1,7 +1,7 @@
-from vancouver_earthquake.core.earthquake import Earthquake
-import vancouver_earthquake.core.network_manager as network_manager
-from vancouver_earthquake.social.social_manager import social_manager
-import vancouver_earthquake.storage.storage_manager as storage_manager
+from core.earthquake import Earthquake
+import core.network_manager as network_manager
+from social.social_manager import social_manager
+import storage.storage_manager as storage_manager
 
 TOP_BOUNDING_BOX = 53.7827
 BOTTOM_BOUNDING_BOX = 44.7827

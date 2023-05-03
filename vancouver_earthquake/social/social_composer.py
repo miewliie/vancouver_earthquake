@@ -1,7 +1,7 @@
 from datetime import datetime
 import pytz
-from vancouver_earthquake.core.earthquake import Earthquake
-from vancouver_earthquake.draw.draw_earthquake import draw_earthquake_points
+from core.earthquake import Earthquake
+from draw.draw_earthquake import draw_earthquake_points
 
 image_path = "../assets/vancouver_base_map.png"
 output_path = "../outputs/vancouver_earthquake_map.png"

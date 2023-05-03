@@ -1,5 +1,5 @@
-import vancouver_earthquake.storage.data_handler as json_handler
-from vancouver_earthquake.core.earthquake import Earthquake
+import storage.data_handler as json_handler
+from core.earthquake import Earthquake
 
 
 def read_earthquake_data(old_eq_path: str) -> list[Earthquake]:
