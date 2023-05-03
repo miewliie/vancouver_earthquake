@@ -1,14 +1,14 @@
-from core.earthquake import Earthquake
-import core.network_manager as network_manager
-from social.social_manager import social_manager
-import storage.storage_manager as storage_manager
+from vancouver_earthquake.core.earthquake import Earthquake
+import vancouver_earthquake.core.network_manager as network_manager
+from vancouver_earthquake.social.social_manager import social_manager
+import vancouver_earthquake.storage.storage_manager as storage_manager
 
 TOP_BOUNDING_BOX = 53.7827
 BOTTOM_BOUNDING_BOX = 44.7827
 LEFT_BOUNDING_BOX = -132.2207
 RIGHT_BOUNDING_BOX = -114.0207
 
-OLD_PATH = "../outputs/old_earthquake.json"
+OLD_PATH = "outputs/old_earthquake.json"
 
 
 def in_boundary(
