@@ -16,7 +16,7 @@ class TestStorageManager(unittest.TestCase):
                 mock.patch('vancouver_earthquake.storage.storage_manager.json_handler.earthquake_encoder',
                            return_value=test_earthquake) as mock_encoder:
             value = read_earthquake_data(old_eq_path=test_path)
-            mock_read_json.assert_called_once_with(test_path)
+            mock_read_json.assert_called_once_with(file_path=test_path)
             mock_encoder.assert_called_once_with(test_json)
             self.assertEqual(value, test_earthquake)
 
