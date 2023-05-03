@@ -1,0 +1,133 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated": 1682750840000,
+    "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2023-04-28&endtime=2023-04-29&latitude=49.246292&longitude=-123.116226&maxradiuskm=1000&eventtype=earthquake&minmagnitude=3.0",
+    "title": "USGS Earthquakes",
+    "status": 200,
+    "api": "1.13.6",
+    "count": 1
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3.4,
+        "place": "37 km SW of Princeton, Canada",
+        "time": 1682702356267,
+        "updated": 1682706699081,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000jwrg",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000jwrg&format=geojson",
+        "felt": 1,
+        "cdi": 2.7,
+        "mmi": 2.841,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 178,
+        "net": "us",
+        "code": "7000jwrg",
+        "ids": ",us7000jwrg,uw61920206,",
+        "sources": ",us,uw,",
+        "types": ",dyfi,origin,phase-data,shakemap,",
+        "nst": 47,
+        "dmin": 0.661,
+        "rms": 0.44,
+        "gap": 181,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 3.4 - 37 km SW of Princeton, Canada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.8133,
+          49.1893,
+          5.374
+        ]
+      },
+      "id": "us7000jwrg"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 4.3,
+        "place": "205 km SW of Port McNeill, Canada",
+        "time": 1681930591548,
+        "updated": 1682600626111,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000k5kt",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000k5kt&format=geojson",
+        "felt": 1,
+        "cdi": 2.9,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 285,
+        "net": "us",
+        "code": "6000k5kt",
+        "ids": ",us6000k5kt,",
+        "sources": ",us,",
+        "types": ",dyfi,origin,phase-data,",
+        "nst": 102,
+        "dmin": 1.567,
+        "rms": 0.85,
+        "gap": 160,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 4.3 - 205 km SW of Port McNeill, Canada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -128.8899,
+          49.1534,
+          10
+        ]
+      },
+      "id": "us6000k5kt"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 4,
+        "place": "203 km W of Bandon, Oregon",
+        "time": 1679892793815,
+        "updated": 1682374113366,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000jmyr",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000jmyr&format=geojson",
+        "felt": 5,
+        "cdi": 3.8,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 248,
+        "net": "us",
+        "code": "7000jmyr",
+        "ids": ",us7000jmyr,",
+        "sources": ",us,",
+        "types": ",dyfi,origin,phase-data,",
+        "nst": 73,
+        "dmin": 1.587,
+        "rms": 0.75,
+        "gap": 199,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 4.0 - 203 km W of Bandon, Oregon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -126.8961,
+          43.3446,
+          16.868
+        ]
+      },
+      "id": "us7000jmyr"
+    }
+  ]
+}

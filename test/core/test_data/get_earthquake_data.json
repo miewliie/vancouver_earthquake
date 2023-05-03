@@ -1,0 +1,173 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated": 1682750840000,
+    "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2023-04-28&endtime=2023-04-29&latitude=49.246292&longitude=-123.116226&maxradiuskm=1000&eventtype=earthquake&minmagnitude=3.0",
+    "title": "USGS Earthquakes",
+    "status": 200,
+    "api": "1.13.6",
+    "count": 1
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3.4,
+        "place": "37 km SW of Princeton, Canada",
+        "time": 1682702356267,
+        "updated": 1682706699081,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000jwrg",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us7000jwrg&format=geojson",
+        "felt": 1,
+        "cdi": 2.7,
+        "mmi": 2.841,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 178,
+        "net": "us",
+        "code": "7000jwrg",
+        "ids": ",us7000jwrg,uw61920206,",
+        "sources": ",us,uw,",
+        "types": ",dyfi,origin,phase-data,shakemap,",
+        "nst": 47,
+        "dmin": 0.661,
+        "rms": 0.44,
+        "gap": 181,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 3.4 - 37 km SW of Princeton, Canada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.8133,
+          49.1893,
+          5.374
+        ]
+      },
+      "id": "us7000jwrg"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 4.3,
+        "place": "205 km SW of Port McNeill, Canada",
+        "time": 1681930591548,
+        "updated": 1682600626111,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000k5kt",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000k5kt&format=geojson",
+        "felt": 1,
+        "cdi": 2.9,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 285,
+        "net": "us",
+        "code": "6000k5kt",
+        "ids": ",us6000k5kt,",
+        "sources": ",us,",
+        "types": ",dyfi,origin,phase-data,",
+        "nst": 102,
+        "dmin": 1.567,
+        "rms": 0.85,
+        "gap": 160,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 4.3 - 205 km SW of Port McNeill, Canada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -128.8899,
+          49.1534,
+          10
+        ]
+      },
+      "id": "us6000k5kt"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 4.2,
+        "place": "256 km W of Tofino, Canada",
+        "time": 1681487345553,
+        "updated": 1681564863040,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000k4hp",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000k4hp&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 271,
+        "net": "us",
+        "code": "6000k4hp",
+        "ids": ",us6000k4hp,",
+        "sources": ",us,",
+        "types": ",origin,phase-data,",
+        "nst": 23,
+        "dmin": 0.836,
+        "rms": 0.98,
+        "gap": 163,
+        "magType": "mb",
+        "type": "earthquake",
+        "title": "M 4.2 - 256 km W of Tofino, Canada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -129.36,
+          48.7804,
+          11.161
+        ]
+      },
+      "id": "us6000k4hp"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 3.02,
+        "place": "23 km NW of Stanley, Idaho",
+        "time": 1681318288600,
+        "updated": 1681832739820,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/mb90010333",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=mb90010333&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 140,
+        "net": "mb",
+        "code": "90010333",
+        "ids": ",mb90010333,",
+        "sources": ",mb,",
+        "types": ",origin,phase-data,",
+        "nst": 35,
+        "dmin": 0.7845,
+        "rms": 0.23,
+        "gap": 64,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 3.0 - 23 km NW of Stanley, Idaho"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.172833333333,
+          44.3515,
+          7.01
+        ]
+      },
+      "id": "mb90010333"
+    }
+  ]
+}

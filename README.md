@@ -13,19 +13,13 @@
 
 </dv>
 
-### Prerequisites 
-1. Request earthquake data from usgs.gov
+### Main flow
 ```
-cd api/
-python3 earthquake_api.py
+main.py
 ```
 
-### Toot earthquake to Mastodon
+### Tests
 ```
-python3 toot.py
+python -m unittest discover
 ```
 
-### Tweet earthquake to Twitter
-```
-python3 tweet.py
-```

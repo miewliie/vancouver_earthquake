@@ -16,10 +16,11 @@ jobs:
       - name: Install dependencies
         run: |-
           cd /home/runner/work/vancouver_earthquake/vancouver_earthquake
-          pip3 install Mastodon.py
           python3 -m pip install --upgrade Pillow
+          pip3 install Mastodon.py
+          pip3 install tweepy
 
       - name: Run tests
         run: |-
           cd /home/runner/work/vancouver_earthquake/vancouver_earthquake/
-          python3 -m unittest test/test_draw_earthquake.py
+          python3 -m unittest discover
