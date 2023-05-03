@@ -7,18 +7,14 @@ from vancouver_earthquake.core.earthquake import Earthquake
 """ This module provides functions to handle earthquake data."""
 
 
-def read_json(file_path):
+def read_json(file_path: str):
     """ Read data from json file."""
     with open(file_path, 'r', encoding='utf-8') as output_file:
         size = os.path.getsize(file_path)
-        if size > 0:
-            data = json.loads(output_file.read())
-        else:
-            data = None
-        return data
+        return json.loads(output_file.read()) if size > 0 else None
 
 
-def write_json(data, file_path):
+def write_json(data:  dict[str, Any], file_path: str):
     """ Write data to json file."""
     with open(file_path, 'w', encoding='utf-8') as output_file:
         json.dump(data, output_file)
