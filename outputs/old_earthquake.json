@@ -1,1 +1,5 @@
-{"features": [{"properties": {"mag": 3.4, "time": 1682702356267, "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000jwrg", "title": "M 3.4 - 37 km SW of Princeton, Canada"}, "geometry": {"coordinates": [-120.8133, 49.1893]}}, {"properties": {"mag": 4.3, "time": 1681930591548, "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000k5kt", "title": "M 4.3 - 205 km SW of Port McNeill, Canada"}, "geometry": {"coordinates": [-128.8899, 49.1534]}}, {"properties": {"mag": 4.2, "time": 1681487345553, "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000k4hp", "title": "M 4.2 - 256 km W of Tofino, Canada"}, "geometry": {"coordinates": [-129.36, 48.7804]}}, {"properties": {"mag": 6, "time": 1681401293780, "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000k42y", "title": "M 6.0 - 237 km SW of Port McNeill, Canada"}, "geometry": {"coordinates": [-129.6158, 49.2137]}}]}
+{
+  "features": [
+
+  ]
+}
