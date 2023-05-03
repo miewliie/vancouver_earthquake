@@ -8,7 +8,7 @@ BOTTOM_BOUNDING_BOX = 44.7827
 LEFT_BOUNDING_BOX = -132.2207
 RIGHT_BOUNDING_BOX = -114.0207
 
-OLD_PATH = "../outputs/old_earthquake.json"
+OLD_PATH = "outputs/old_earthquake.json"
 
 
 def in_boundary(
