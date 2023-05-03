@@ -28,14 +28,14 @@ def convert_lat_to_y_pixel(image_height: float, latitude: float) -> float:
     return yp
 
 
-def draw_earthquake_points(image_path: str, output_path: str, earthquake_data: list[Earthquake]):
+def draw_earthquake_points(base_image_path: str, output_path: str, earthquakes: list[Earthquake]) -> str:
     """ This function will draw earthquake longitude and latitude on the base map."""
-    image: Image = Image.open(image_path).convert('RGBA')
+    image: Image = Image.open(base_image_path).convert('RGBA')
     im_width: int = image.size[0]
     im_height: int = image.size[1]
     draw: ImageDraw = ImageDraw.Draw(image)
 
-    for earthquake in earthquake_data:
+    for earthquake in earthquakes:
         x_longitude: float = earthquake.longitude
         y_latitude: float = earthquake.latitude
         magnitude: float = earthquake.magnitude
@@ -58,5 +58,5 @@ def draw_earthquake_points(image_path: str, output_path: str, earthquake_data: l
                           radius, lat_y_pixel + radius), fill='#26d152', outline='#7df59b', width=20)
 
     image.save(output_path)
-
+    return output_path
 
