@@ -26,7 +26,7 @@ jobs:
 
       - name: Post earthquake and map into Mastodon
         run: |-
-          cd /home/runner/work/vancouver_earthquake/vancouver_earthquake/vancouver_earthquake
+          cd /home/runner/work/vancouver_earthquake/vancouver_earthquake/
           python3 main.py
         env:
           ACCOUNT_EMAIL: ${{ secrets.ACCOUNT_EMAIL }}
