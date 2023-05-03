@@ -1,6 +1,6 @@
 from PIL import Image, ImageDraw
 
-from core.earthquake import Earthquake
+from vancouver_earthquake.core.earthquake import Earthquake
 
 TOP = 53.7827
 BOTTOM = 44.7827

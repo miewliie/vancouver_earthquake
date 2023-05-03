@@ -2,7 +2,7 @@ import os
 import json
 from typing import Any
 
-from core.earthquake import Earthquake
+from vancouver_earthquake.core.earthquake import Earthquake
 
 """ This module provides functions to handle earthquake data."""
 

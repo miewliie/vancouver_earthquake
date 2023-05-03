@@ -1,6 +1,6 @@
-from core.earthquake import Earthquake
-from core.earthquake_api import fetch_earthquakes
-from storage.data_handler import earthquake_encoder
+from vancouver_earthquake.core.earthquake import Earthquake
+from vancouver_earthquake.core.earthquake_api import fetch_earthquakes
+from vancouver_earthquake.storage.data_handler import earthquake_encoder
 
 """ This module provides functions to get earthquake data from API."""
 

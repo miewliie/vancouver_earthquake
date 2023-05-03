@@ -1,7 +1,7 @@
-from core.earthquake import Earthquake
-from social.social_composer import compose_message, create_map
-from social.toot import send_new_toot, MastodonError
-from social.tweet import send_new_tweet
+from vancouver_earthquake.core.earthquake import Earthquake
+from vancouver_earthquake.social.social_composer import compose_message, create_map
+from vancouver_earthquake.social.toot import send_new_toot, MastodonError
+from vancouver_earthquake.social.tweet import send_new_tweet
 
 """ This module provides functions to handle social media."""
 
