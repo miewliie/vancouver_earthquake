@@ -2,8 +2,7 @@ import requests
 from datetime import date, timedelta
 
 
-START_DATE = '2023-04-28'
-# START_DATE = date.today().isoformat()
+START_DATE = date.today().isoformat()
 END_DATE = (date.today()+timedelta(days=1)).isoformat()
 # vancouver lat & long
 LATITUDE = '49.246292'
