@@ -12,11 +12,6 @@ def social_manager(earthquakes: list[Earthquake]):
     message: str = compose_message(earthquakes=earthquakes)
 
     print(image_path, ' ', message)
-    try:
-        send_new_toot(message=message, image_path=image_path)
-    except MastodonError:
-        pass
-    try:
-        send_new_tweet(message=message, image_path=image_path)
-    except Exception:
-        pass
+
+    send_new_toot(message=message, image_path=image_path)   
+    send_new_tweet(message=message, image_path=image_path)
