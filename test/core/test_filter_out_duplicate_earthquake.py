@@ -2,7 +2,7 @@ import unittest
 
 from vancouver_earthquake.core.earthquake import Earthquake
 from vancouver_earthquake.core.network_manager import earthquake_encoder
-from vancouver_earthquake.main import filter_out_duplicate_earthquake
+from main import filter_out_duplicate_earthquake
 from vancouver_earthquake.storage.data_handler import read_json
 
 
