@@ -3,18 +3,12 @@ import vancouver_earthquake.core.network_manager as network_manager
 from vancouver_earthquake.social.social_manager import social_manager
 import vancouver_earthquake.storage.storage_manager as storage_manager
 
-# test in_boundary() --> test_in_boundary.py ------ done
-# test test_storage_manager.py
-# test filter_out_duplicate_earthquake() --> test_filter_out_duplicate_earthquake.py
-# test test_social_manager.py
-
-# update workflow
-# update README.md
-
 TOP_BOUNDING_BOX = 53.7827
 BOTTOM_BOUNDING_BOX = 44.7827
 LEFT_BOUNDING_BOX = -132.2207
 RIGHT_BOUNDING_BOX = -114.0207
+
+OLD_PATH = "../outputs/old_earthquake.json"
 
 
 def in_boundary(
@@ -41,8 +35,8 @@ def main():
         print("No earthquake in Vancouver.")
         return
 
-    old_earthquakes: list[Earthquake] = storage_manager.read_earthquake_data()
-    storage_manager.write_earthquake_data(new_eq=new_earthquakes)
+    old_earthquakes: list[Earthquake] = storage_manager.read_earthquake_data(old_eq_path=OLD_PATH)
+    storage_manager.write_earthquake_data(new_eq=new_earthquakes, old_path=OLD_PATH)
     filtered_earthquakes: list[Earthquake] = filter_out_duplicate_earthquake(old_eq=old_earthquakes,
                                                                              new_eq=new_earthquakes)
 
