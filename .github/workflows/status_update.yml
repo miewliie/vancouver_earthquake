@@ -2,8 +2,8 @@ name: Earthquake Toot & Tweet workflow
 
 on:
   workflow_dispatch:
-#  schedule:
-#    - cron: "0 * * * *"
+#   schedule:
+#     - cron: "0 * * * *"
 
 jobs:
   toot:
@@ -15,35 +15,47 @@ jobs:
       - name: Install dependencies
         run: |-
           cd /home/runner/work/vancouver_earthquake/vancouver_earthquake
-          python3 -m pip install --upgrade Pillow
           pip3 install Mastodon.py
+          python3 -m pip install --upgrade Pillow
           pip3 install tweepy
 
       - name: Run tests
         run: |-
           cd /home/runner/work/vancouver_earthquake/vancouver_earthquake/
-          python3 -m unittest discover
+          python3 -m unittest test/test_draw_earthquake.py
 
-      - name: Post earthquake status and map to Mastodon and status to Twitter
+      - name: Request earthquake data and write into Json file
         run: |-
-          cd /home/runner/work/vancouver_earthquake/vancouver_earthquake/vancouver_earthquake
-          python3 main.py
-        env:
-          ACCOUNT_EMAIL: ${{ secrets.ACCOUNT_EMAIL }}
-          PASSWORD: ${{ secrets.PASSWORD }}
-          MASTODON_SERVER: ${{ secrets.MASTODON_SERVER }}
-          TW_BEARER_TOKEN: ${{ secrets.TW_BEARER_TOKEN }}
-          TW_API_KEY: ${{ secrets.TW_API_KEY }}
-          TW_API_KEY_SECRET: ${{ secrets.TW_API_KEY_SECRET }}
-          TW_USER_ACCESS_TOKEN: ${{ secrets.TW_USER_ACCESS_TOKEN }}
-          TW_USER_ACCESS_TOKEN_SECRET: ${{ secrets.TW_USER_ACCESS_TOKEN_SECRET }}
+          cd /home/runner/work/vancouver_earthquake/vancouver_earthquake/api 
+          python3 earthquake_api.py
 
       - name: Commit and push if api changed
         run: |-
           cd /home/runner/work/vancouver_earthquake/vancouver_earthquake/
           git config user.name "Automated"
           git config user.email "actions@users.noreply.github.com"
-          git add outputs/old_earthquake.json
+          git add outputs/earthquake.json
           timestamp=$(date -u)
           git commit -m "Latest response from earthquake.usgs.gov: ${timestamp}" || exit 0
           git push
+
+      - name: Post earthquake and map into Mastodon
+        run: |-
+          cd /home/runner/work/vancouver_earthquake/vancouver_earthquake
+          python3 toot.py
+        env:
+          ACCOUNT_EMAIL: ${{ secrets.ACCOUNT_EMAIL }}
+          PASSWORD: ${{ secrets.PASSWORD }}
+          MASTODON_SERVER: ${{ secrets.MASTODON_SERVER }}
+
+      - name: Post earthquake into Twitter
+        run: |-
+          cd /home/runner/work/vancouver_earthquake/vancouver_earthquake
+          python3 tweet.py
+        env:
+          TW_BEARER_TOKEN: ${{ secrets.TW_BEARER_TOKEN }}
+          TW_API_KEY: ${{ secrets.TW_API_KEY }}
+          TW_API_KEY_SECRET: ${{ secrets.TW_API_KEY_SECRET }}
+          TW_USER_ACCESS_TOKEN: ${{ secrets.TW_USER_ACCESS_TOKEN }}
+          TW_USER_ACCESS_TOKEN_SECRET: ${{ secrets.TW_USER_ACCESS_TOKEN_SECRET }}
+
