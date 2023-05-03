@@ -8,34 +8,24 @@ output_path = "../outputs/vancouver_earthquake_map.png"
 
 
 def compose_message(earthquakes: list[Earthquake]) -> str:
-    """ This function will compose the message for earthquake. """
+    """ Composes the message zfor the social status update. """
 
-    titles: list[str] = []
+    lines: list[str] = []
     for earthquake in earthquakes:
-        title_date_time: list[str] = []
+        utc_datetime: datetime = datetime.utcfromtimestamp(earthquake.time / 1000)
+        vancouver_datetime = pytz.timezone('UTC').localize(utc_datetime).astimezone(pytz.timezone('America/Vancouver'))
+        formatted_time: str = vancouver_datetime.strftime("%Y-%m-%d %H:%M:%S")
 
-        second = earthquake.time / 1000
-        utc_datetime = datetime.utcfromtimestamp(second)
-        utc_timezone = pytz.timezone('UTC')
-        localized_utc_datetime = utc_timezone.localize(utc_datetime)
-        vancouver_timezone = pytz.timezone('America/Vancouver')
-        vancouver_datetime = localized_utc_datetime.astimezone(vancouver_timezone)
-        temp_datetime = vancouver_datetime.strftime("%Y-%m-%d %H:%M:%S")
+        message: str = f"{earthquake.title} : {formatted_time} : Vancouver Time"
+        lines.append(message)
 
-        title_date_time.append(earthquake.title)
-        title_date_time.append(str(temp_datetime))
+    lines.append("#Vancouver #VancouverEarthquake #Earthquake #EarthquakeVancouver")
 
-        title_date_time.append('Vancouver Time')
-
-        one_eq_title: str = ' : '.join(title_date_time)
-        titles.append(one_eq_title)
-
-    titles.append("#Vancouver #VancouverEarthquake #Earthquake #EarthquakeVancouver")
-    title = '\n'.join(titles)
-    return title
+    status_message: str = '\n'.join(lines)
+    return status_message
 
 
-def create_map(earthquake: list[Earthquake]) -> str:
+def create_map(earthquakes: list[Earthquake]) -> str:
     """ This function will create the map for earthquake. """
-    draw_earthquake_points(image_path=image_path, output_path=output_path, earthquake_data=earthquake)
-    return output_path
+    result_output_path: str = draw_earthquake_points(base_image_path=image_path, output_path=output_path, earthquakes=earthquakes)
+    return result_output_path
